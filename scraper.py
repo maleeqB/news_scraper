@@ -19,4 +19,4 @@ class Scraper:
                 print(news_url, end="\n\n")
 
 if __name__ == "__main__":
-    Scraper('https://news.google.com/').scrape()
+    Scraper('https://news.google.com.ng/').scrape()

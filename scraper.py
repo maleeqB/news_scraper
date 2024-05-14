@@ -2,9 +2,9 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 class GoogleNewsScraper:
-    site = ""
-    def __init__(self, site):
-        self.site = site
+    site = "https://news.google.com.ng/"
+    def __init__(self):
+        pass
 
     def scrape(self):
         response = urlopen(self.site)
@@ -19,4 +19,4 @@ class GoogleNewsScraper:
                 print(news_url, end="\n\n")
 
 if __name__ == "__main__":
-    GoogleNewsScraper('https://news.google.com.ng/').scrape()
+    GoogleNewsScraper().scrape()

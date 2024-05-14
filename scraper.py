@@ -14,7 +14,7 @@ class Scraper:
         for tag in soup.find_all('a'):
             url = tag.get('href')
             if url and 'articles' in url and tag.text != "":
-                news_url = "https://news.google.com/" + url[2:]
+                news_url = self.site + url[2:]
                 print(tag.text)
                 print(news_url, end="\n\n")
 
